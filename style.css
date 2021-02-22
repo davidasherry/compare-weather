@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(41, 41, 41), rgb(8, 8, 8));
+    font-family: sans-serif;
+    color: white
+}
+
+#compareForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #primary-input {
+    /* display: none; */
+/* } */ 
+
+#primary-input, #location-input {
+    background-color: transparent;
+    color: gray;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 2.5px solid gray;
+    border-radius: 1.5px;
+    margin-bottom: 24px;
+    outline: none;
+}
+
+.btns {
+        background-color: transparent;
+        border-radius: 1.5px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 18px;
+        border: none;
+        font-size: 1.4em;
+        margin: 15px 18px;
+}
+
+#vr {
+    border-left: 4px solid rgb(26, 26, 26);;
+}
+
+#compareBtn {
+    border-left: 4px solid rgb(26, 26, 26);
+}
+
+#randomBtn {
+    border-right: 4px solid rgb(26, 26, 26);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.primary-weather-output,
+.secondary-weather-output {
+    width: 40%;
+}
+
+.location, 
+.temperature {
+    height: 27vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-country {
+    margin-left: 6px;
+}
+
+.location-timezone {
+    text-align: center;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span {
+    font-size: 22px;
+    margin: 0 0 12px 6px;
+}
+
+.degree-section h2 {
+    font-size: 2em;
+}
+
+.feels-like {
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+}
+
+.icon { 
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .btns {
+        font-size: 1.2em;
+    }
+    .location {
+        font-size: .65em;
+    }
+
+    .flex-container {
+        width: 100%;
+    }
+
+    .primary-weather-output,
+    .secondary-weather-output {
+     width: 45%;
+    }
+
+    .location-country {
+        margin-left: 6px;
+    }
+
+    .icon, .temperature-description { 
+        font-size: .9em;
+    }
+
+    .degree-section h2 {
+        font-size: 1.5em;
+    }
+
+    .degree-section span {
+        font-size: 14px;
+        margin: 0 0 12px 5px;
+    }
+
+    .feels-like {
+        margin-bottom: 1.5em;
+        margin-top: 1em;
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .location {
+        font-size: .85em;
+    }
+
+    .degree-section h2 {
+        font-size: 1.3em;
+        margin-top: 12px;
+    }
+
+    .degree-section span {
+        font-size: 12px;
+    }
+
+    .feels-like {
+        margin-bottom: 1.3em;
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .location {
+        font-size: 1.1em;
+    }
+
+    .degree-section h2 {
+        font-size: 1.8em;
+    }
+
+    .feels-like {
+        font-size: 18px;
+    }
+
+    .icon, .temperature-description { 
+        font-size: 1.2em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}

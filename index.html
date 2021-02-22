@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="compareForm">
+        <input type="text" id="primary-input" placeholder="City Name">
+        <button type="button" id="primary-button" class="btns">locate</button>
+        <input type="text" id="location-input" placeholder="City Name">
+        <div id="formBtns">
+            <button type="button" id="compareBtn" class="btns">compare</button>
+            <span id="vr"></span>
+            <button type="button" id="randomBtn" class="btns">random</button>
+        </div>
+            
+            <!-- <button type="button" id="randomBtn" class="btns">random</button> -->
+    </form>
+
+    <div class="flex-container">
+        <div class="primary-weather-output">
+            <div class="location">
+                <h1 class="location-timezone"></h1>
+                <h2 class="location-country"></h2>
+            </div>
+                <p class="icon"></p>
+            <div class="temperature">
+                <div class="degree-section">
+                    <h2 class="temperature-degree"></h2>
+                    <span>C</span>
+                </div>
+                <div class="feels-like"></div>
+                <div class="temperature-description"></div>
+            </div>
+        </div>
+
+        <div class="secondary-weather-output">
+            <div class="location">
+                <h1 class="sec-location location-timezone"></h1>
+                <h2 class="sec-country location-country">PH</h2>
+            </div>
+                 <p class="sec-icon icon">Placeholder</p>
+            <div class="temperature">
+                <div class="degree-section">
+                    <h2 class="sec-degree temperature-degree">Placeholder</h2>
+                    <span>C</span>
+                </div>
+                <div class="sec-feels feels-like">Feels Like</div>
+                <div class="sec-description temperature-description">Placeholder Description</div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='config.js'></script>
+    <script type='text/javascript' src="script.js"></script>
+</body>
+</html>
